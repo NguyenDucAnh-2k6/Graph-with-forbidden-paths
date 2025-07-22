@@ -1,12 +1,11 @@
-# Graph-with-forbidden-paths
-A problem in network broadcasting, where electromagnetic interference between paths can degrade signal quality, meaning some pairs of paths cannot be traversed at the same time <br />
-given: <br />
+# Graph-with-forbidden-paths modeling
+Given: <br />
 an directed graph G = (V,E,c) where V: the set of n nodes, E is the set of m edges in G, each edge e in E is associated
 with a positive cost c(e) <br />
 a pair of distinct nodes s and t in V <br />
 a list L of k forbidden edge pairs, where each pair (e1,e2) belongs L satisfies e1,e2 belongs E <br />
-ques: find an elementary path in G that starts at node s and ends at node t. visits each nodes <br />
-at most once, does not include both edges from any forgetbidden pair (e1,e2) belongs L and minimize the total cost of the path <br />
+Objective: find an elementary path in G that starts at node s and ends at node t. visits each nodes <br />
+at most once, does not include both edges from any forgetbidden pair (e1,e2) belongs to L and minimize the total cost of the path <br />
 # Input  <br />
 line 1: contains 5 integers corresponding n,m,k,s,t (5 <= n<= 40) <br />
 line i+1:(i =1,...,m) : each line contains three integers respresenting an edge in E, where the first two integers are the
